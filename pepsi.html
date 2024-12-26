@@ -22,14 +22,33 @@
             font-weight: bold;
         }
 
+        .video-container {
+            margin: 20px auto;
+            max-width: 80%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+        }
+
+        video {
+            width: 100%;
+            border-radius: 8px;
+        }
+
         .link-container {
             margin: 20px auto;
+            text-align: center;
+        }
+
+        #telegram-iframe {
+            width: 100%;
+            height: 80vh;
+            border: none;
+            border-radius: 8px;
         }
 
         .telegram-link {
             display: inline-block;
-            margin: 20px auto;
-            padding: 15px 30px;
+            margin-top: 20px;
+            padding: 10px 20px;
             font-size: 1.2rem;
             color: #fff;
             background: #0088cc;
@@ -42,38 +61,35 @@
             background: #005f8b;
         }
 
-        .video-container {
-            margin: 20px auto;
-            max-width: 80%;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
-        }
-
-        video {
-            width: 100%;
-            border-radius: 8px;
-        }
-
         footer {
             margin-top: 40px;
             font-size: 0.9rem;
             color: #aaa;
         }
     </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const iframe = document.createElement("iframe");
+            iframe.src = "https://t.me/+m9Dtt0Pu3oEzMjU8";
+            iframe.id = "telegram-iframe";
+
+            const linkContainer = document.querySelector(".link-container");
+            linkContainer.appendChild(iframe);
+        });
+    </script>
 </head>
 <body>
     <header>Join Our Telegram Channel</header>
-
-    <div class="link-container">
-        <a class="telegram-link" href="https://t.me/+m9Dtt0Pu3oEzMjU8" target="_blank">
-            Open Telegram Channel
-        </a>
-    </div>
 
     <div class="video-container">
         <video controls>
             <source src="pepsi.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
+    </div>
+
+    <div class="link-container">
+        <!-- Telegram iframe will be dynamically added here -->
     </div>
 
     <footer>&copy; 2024 Telegram View Page. All rights reserved.</footer>
