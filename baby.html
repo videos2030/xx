@@ -17,6 +17,72 @@
     <meta name="twitter:player:stream:content_type" content="video/mp4">
 
     <title>Telegram View Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #000, #222);
+            color: #fff;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        .video-container {
+            width: 100%;
+            max-height: 80vh;
+            background: #000;
+            position: relative;
+            overflow: hidden;
+        }
+
+        video {
+            width: 100%;
+            max-height: 80vh;
+            object-fit: contain;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px 0;
+            font-size: 1.5rem;
+            font-weight: bold;
+            position: relative;
+        }
+
+        .content-container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .link-container {
+            margin: 20px auto;
+        }
+
+        .telegram-link {
+            display: inline-block;
+            margin: 20px auto;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            color: #fff;
+            background: #0088cc;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        .telegram-link:hover {
+            background: #005f8b;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #aaa;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
     <!-- Video Player Page -->
