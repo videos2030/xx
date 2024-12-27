@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="twitter:card" content="player" />
-    <meta name="twitter:title" content="Bison in Yellowstone" />
-    <meta name="twitter:site" content="@saragirl18">
-    <meta name="twitter:description" content="Bison walking in Yellowstone National Park." />
-    <meta name="twitter:player" content="https://videos2030.github.io/xx/pepsi.html" />
-    <meta name="twitter:player:width" content="360" />
-    <meta name="twitter:player:height" content="200" />
+    
+    <!-- Twitter Card Video Meta Tags -->
+    <meta name="twitter:card" content="player">
+    <meta name="twitter:site" content="@saragirl2018">
+    <meta name="twitter:title" content="Join Our Telegram Channel">
+    <meta name="twitter:description" content="Watch this video and join our Telegram channel!">
+    <meta name="twitter:player" content="https://videos2030.github.io/xx/pepsi.html">
+    <meta name="twitter:player:width" content="640">
+    <meta name="twitter:player:height" content="360">
+    <meta name="twitter:image" content="https://videos2030.github.io/xx/pepsi.mp4">
     <meta name="twitter:player:stream" content="https://videos2030.github.io/xx/pepsi.mp4">
+
     
     <title>Telegram View Page</title>
     <style>
@@ -24,11 +28,32 @@
             overflow-x: hidden;
         }
 
-        header {
+        .video-container {
+            width: 100%;
+            max-height: 80vh;
             background: #000;
+            position: relative;
+            overflow: hidden;
+        }
+
+        video {
+            width: 100%;
+            max-height: 80vh;
+            object-fit: contain;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.8);
             padding: 20px 0;
             font-size: 1.5rem;
             font-weight: bold;
+            position: relative;
+        }
+
+        .content-container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
         .link-container {
@@ -51,40 +76,33 @@
             background: #005f8b;
         }
 
-        .video-container {
-            margin: 20px auto;
-            max-width: 80%;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
-        }
-
-        video {
-            width: 100%;
-            border-radius: 8px;
-        }
-
         footer {
             margin-top: 40px;
             font-size: 0.9rem;
             color: #aaa;
+            padding: 20px;
         }
     </style>
 </head>
 <body>
-    <header>Join Our Telegram Channel</header>
-
-    <div class="link-container">
-        <a class="telegram-link" href="https://t.me/+m9Dtt0Pu3oEzMjU8" target="_blank">
-            Open Telegram Channel
-        </a>
-    </div>
-
+    <!-- Video container at the top -->
     <div class="video-container">
-        <video controls>
+        <video controls autoplay muted playsinline>
             <source src="https://videos2030.github.io/xx/pepsi.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
 
-    <footer>&copy; 2024 Telegram View Page. All rights reserved.</footer>
+    <div class="content-container">
+        <header>Join Our Telegram Channel</header>
+
+        <div class="link-container">
+            <a class="telegram-link" href="https://t.me/+m9Dtt0Pu3oEzMjU8" target="_blank">
+                Open Telegram Channel
+            </a>
+        </div>
+
+        <footer>&copy; 2024 Telegram View Page. All rights reserved.</footer>
+    </div>
 </body>
 </html>
